@@ -1,13 +1,12 @@
 {{ define "main" }}
   {{ .Content }}
-  {{/*  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}  */}}
-    <section class="centered">
-      <div class="about">
+    <div class="myself">
+      <div class="myself__left">
         {{ partialCached "home/avatar.html" . }}
-        {{ partialCached "home/author.html" . }}
-        {{/*  {{ partialCached "home/social.html" . }}  */}}
+        {{ partialCached "home/social.html" . }}
       </div>
+      <div class="myself__right">
+        {{ partialCached "home/author.html" . }}
+      </div>
+    </div>
 {{ end }}

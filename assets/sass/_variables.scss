@@ -1,0 +1,11 @@
+// importing core styling file
+@import './fontawesome/fontawesome.scss';
+
+//  importing Font Awesome styles
+@import './fontawesome/solid.scss';
+@import './fontawesome/brands.scss';
+
+// importing Jetbrains Mono
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+$fa-font-path: "../webfonts" !default;
