@@ -1,19 +1,15 @@
 @import './variables';
 
-:root {
-  --accent-color: rgb(136, 56, 255);
-}
-
 body {
   font-family: "JetBrains Mono", monospace;
   color: white;
-  background-color: #222;
+  background-color: $bg;
 
   line-height: 1.5;
   margin: auto;
-  max-width: 768px;
+  max-width: $breakpoint-tablet;
 
-  @media only screen and (max-width: 768px) {
+  @media (max-width: $breakpoint-tablet) {
       margin: 0 1rem;
   }
 }
@@ -21,10 +17,15 @@ body {
 .myself {
   display: flex;
   margin: 1rem 0;
-  background-color: #333;
+  background-color: $bg-accent;
   border-radius: 4px;
   padding: 10px 10px;
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
+
+  @media (max-width: $breakpoint-tablet) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   ul {
     list-style-type: none;
@@ -43,7 +44,7 @@ body {
       border-radius: 50%;
       width: auto;
       height: 10rem;
-      border: 1px solid var(--accent-color);
+      border: 1px solid $accent-color;
     }
   }
 
@@ -65,7 +66,7 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid $bg;
   margin-bottom: 3rem;
   padding: 20px 0;
 
@@ -99,7 +100,7 @@ a {
 }
 
 article {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
   border-radius: 4px;
   margin-top: 1em;
   padding: 10px 10px;
@@ -119,14 +120,18 @@ img {
 }
 
 .button-link {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   color: white;
   border-radius: 4px;
   max-width: 10rem;
   padding: 10px 10px;
+
+  &:hover {
+    background-color: white;
+    color: $accent-color;
+  }
 }
 
-.button-link:hover {
-  background-color: white;
-  color: var(--accent-color);
+.fa:hover {
+  color: $accent-color;
 }
