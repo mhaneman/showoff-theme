@@ -28,14 +28,14 @@ body {
   }
 
   ul {
-    display: inline;
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   
   li {
-    display: inline;
+    margin: 0 0.5rem;
   }
 
   .avatar {
@@ -79,14 +79,14 @@ header {
   }
 
   ul {
-    display: inline;
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
   
   li {
-    display: inline;
+    margin: 0 0.5rem;
   }
 
 }
