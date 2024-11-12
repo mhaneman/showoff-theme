@@ -9,6 +9,14 @@
         </div>
       {{ end }}
 
+      {{ with .Params.video }}
+        <div class="img__container">
+          <video autoplay loop>
+            <source src="{{ . }}" type="video/mp4">
+          </video>
+        </div>
+      {{ end }}
+
       <h2>{{ .LinkTitle }}</h2>
 
       {{ with .Date }}

@@ -115,6 +115,14 @@ img {
   object-fit: contain;
 }
 
+video {
+  display: block;
+  margin: auto;
+  max-height: 512px;
+  width: 100%;
+  object-fit: contain;
+}
+
 .img__container {
   background-color: #111;
   border-radius: 4px;
