@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <article>
+      {{ with .Params.image }}
+        <div class="img__container">
+          <img src="{{ . }}">
+        </div>
+      {{ end }}
+      <h2>{{ .LinkTitle }}</h2>
+      {{ with .Description }}
+        <h4>{{ . }}</h4>
+      {{ end }}
+      <h4><a class="button-link" href="{{ .RelPermalink }}">Continue Reading</a></h4>
+    </article>
+  {{ end }}
+{{ end }}
