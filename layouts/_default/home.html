@@ -4,4 +4,10 @@
     <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
     {{ .Summary }}
   {{ end }}  */}}
+    <section class="centered">
+      <div class="about">
+        {{ partialCached "home/avatar.html" . }}
+        {{ partialCached "home/author.html" . }}
+        {{/*  {{ partialCached "home/social.html" . }}  */}}
+      </div>
 {{ end }}

@@ -11,30 +11,6 @@ body {
   line-height: 1.5;
   margin: auto;
   max-width: 768px;
-
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  width: 100%;
-}
-
-/* main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-} */
-
-.centered {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar img {
-  border-radius: 50%;
-  width: auto;
-  height: 12rem;
 }
 
 header {
@@ -43,11 +19,12 @@ header {
 }
 
 footer {
-  margin: 1rem 0;
+  border-top: 1px solid #222;
+  margin-top: 1rem;
 }
 
 a {
-  color: white;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
